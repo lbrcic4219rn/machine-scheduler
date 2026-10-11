@@ -11,5 +11,5 @@ import {ToastsComponent} from './components/toasts/toasts.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'fe-domaci3';
+  title = 'machine-scheduler';
 }

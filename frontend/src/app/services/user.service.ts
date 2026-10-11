@@ -37,7 +37,7 @@ export class UserService {
   }
 
   hasAnyPermission(): boolean {
-    return Object.values(this.permissions()).some(value => value === 1);
+    return Object.values(this.permissions()).includes(1);
   }
 
   login(email: string, password: string): Observable<Session> {

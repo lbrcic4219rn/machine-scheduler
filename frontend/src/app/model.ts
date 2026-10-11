@@ -41,7 +41,6 @@ export interface Machine {
   name: string;
   status: MachineStatus;
   createdAt: string;
-  /** Serialized from a Java boolean, not an int. */
   operationActive: boolean;
 }
 
@@ -49,7 +48,12 @@ export interface ErrorMessage {
   errorDate: string;
   machineId: number;
   operationName: string;
-  errorMessage: string;
+  message: string;
+}
+
+export interface CsrfToken {
+  headerName: string;
+  token: string;
 }
 
 export interface Session {

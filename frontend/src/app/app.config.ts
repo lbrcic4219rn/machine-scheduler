@@ -4,6 +4,7 @@ import {provideHttpClient, withInterceptors} from '@angular/common/http';
 
 import {routes} from './app.routes';
 import {credentialsInterceptor} from './interceptors/credentials.interceptor';
+import {csrfInterceptor} from './interceptors/csrf.interceptor';
 import {errorInterceptor} from './interceptors/error.interceptor';
 
 export const appConfig: ApplicationConfig = {
@@ -11,6 +12,6 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({eventCoalescing: true}),
     provideRouter(routes),
-    provideHttpClient(withInterceptors([credentialsInterceptor, errorInterceptor]))
+    provideHttpClient(withInterceptors([credentialsInterceptor, csrfInterceptor, errorInterceptor]))
   ]
 };

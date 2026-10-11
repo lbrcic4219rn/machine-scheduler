@@ -1,11 +1,11 @@
 services:
   db:
     image: mysql:8.4
-    container_name: domaci3-mysql
+    container_name: machine-scheduler-mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: domaci3
+      MYSQL_DATABASE: machine_scheduler
     ports:
       - "3306:3306"
     volumes:

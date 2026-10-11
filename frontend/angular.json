@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "fe-domaci3": {
+    "machine-scheduler": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -65,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "fe-domaci3:build:production"
+              "buildTarget": "machine-scheduler:build:production"
             },
             "development": {
-              "buildTarget": "fe-domaci3:build:development"
+              "buildTarget": "machine-scheduler:build:development"
             }
           },
           "defaultConfiguration": "development"
